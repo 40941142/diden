@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>師資介紹</title>
+    <link rel="icon" href="40941142.ico" type="image/x-icon" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="sy/cc.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -16,15 +16,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake.min.css"
         integrity="sha512-RliK2gk03WxUELn57ddjWLhEfhUiOZ85VvWLImFy8A7FOPMkF4Z9YGQ3VKX5jpwkEerAL6I0nC+JNeCPrxWBTw=="
         crossorigin="anonymous" />
+    <!--movingletters-->
+    <link rel="stylesheet" type="text/css" href="MovingLetters.css">
     <!--fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="sy/cc.css">
 </head>
 
 <body>
+    <div class="loading"></div>
     <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark" style="opacity: 0.9;">
         <div class="container" style="max-width: 1400px;">
-            <a href="home.html"><img class="logosize" width="313" height="80" src="Logo.PNG" alt=""></a>
+            <a href="home.html"><img src="Logo.png" alt="" class="logosize"></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                 data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -48,9 +53,6 @@
                         <a class="nav-link" href="photo.html">活動相簿</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">招生資訊</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="admissions.html">聯絡我們</a>
                     </li>
                     <li class="nav-item">
@@ -64,10 +66,10 @@
 
     <h1 class="ml11 my-5">
         <span class="text-wrapper">
-          <span class="line line1"></span>
-          <span class="letters">師資介紹</span>
+            <span class="line line1"></span>
+            <span class="letters">師資陣容介紹</span>
         </span>
-      </h1>
+    </h1>
 
     <div class="container">
         <div class="row justify-content-center mt-5">
@@ -347,7 +349,10 @@
 
     <!--moving letters-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="js/MovingLetters2.js"></script>
+    <script src="MovingLetters2.js"></script>
+    <!--loading-->
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="js/loading.js"></script>
 </body>
 
 </html>
