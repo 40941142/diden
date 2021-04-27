@@ -4,6 +4,18 @@ body {
     background-image: url(pc_bg.jpg);
     background-size: cover;
     background-attachment: fixed;
+    overflow-y: hidden;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99999;
+    background: white;
+    background-image: url(152.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 @media(max-width:900px) {
