@@ -2,30 +2,42 @@
 <html lang="en">
 
 <head>
-    <title>雲林縣立帝丹幼兒園</title>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="icon" href="40941142.ico">
     <link rel="stylesheet" href="sy/cc.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--CSSshake-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake.min.css"
+        integrity="sha512-RliK2gk03WxUELn57ddjWLhEfhUiOZ85VvWLImFy8A7FOPMkF4Z9YGQ3VKX5jpwkEerAL6I0nC+JNeCPrxWBTw=="
+        crossorigin="anonymous" />
+    <!--movingletters-->
+    <link rel="stylesheet" type="text/css" href="MovingLetters.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <body>
     <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark" style="opacity: 0.9;">
         <div class="container" style="max-width: 1400px;">
-            <a href="home.html"><img src="Logo.png" alt="" class="logosize"></a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <a href="home.html"><img width="313" height="80" src="Logo.PNG" alt=""></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto ml-5 mt-2 mt-lg-0">
                     <!--標題設計-->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">園所資訊</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">園所資訊</a>
                         <div class="dropdown-menu bg-secondary" aria-labelledby="dropdownId">
                             <a class="dropdown-item text-warning" href="environment.html">園所環境</a>
                             <a class="dropdown-item text-warning active" href="teacher.html">師資陣容</a>
@@ -36,6 +48,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="photo.html">活動相簿</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">招生資訊</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="admissions.html">聯絡我們</a>
@@ -49,15 +64,57 @@
     </nav>
 
 
+    <h1 class="ml11 my-5">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span class="letters">師資介紹</span>
+        </span>
+      </h1>
+
     <div class="container">
-        <p class="mt-5 disperse col-12">師 資 陣 容</p>
         <div class="row justify-content-center mt-5">
             <div class="col-lg-4">
-                <div class="card" style="width: 18rem;" data-aos="flip-down">
-                    <img src="th\校長.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">植松竜司郎</h4>
-                        <p class="card-text">園長</p>
+                <a href="" style="text-decoration:none;color:black;" data-toggle="modal" data-target="#modal1">
+                    <div class="card shake-trigger" style="width: 18rem; background:orange;" data-aos="flip-down">
+                        <img src="th\校長.jpg" class="card-img-top shake-slow" alt="...">
+                        <div class="card-body shake-slow">
+                            <h4 class="card-title">植松竜司郎</h4>
+                            <p class="card-text">園長</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Modal1 -->
+        <div class="modal fade" id="modal1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">植松竜司郎<small>園長</small></h4>
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                    </div>
+                    <div class="modal-body">
+                        臺灣省立臺北師範專科學校幼稚教育師資科
+                        <br>明新學校財團法人明新科技大學 服務產業暨管理研究所 碩士
+                        <hr>
+                        <p>
+                        <h5>民國96-104年</h5>
+                        <li>社團法人新竹市教保人員協會托育服務人員專業訓練課程講師</li>
+                        </p>
+                        <p>
+                        <h5>民國103年</h5>
+                        <li>獲頒特殊優良園長獎</li>
+                        </p>
+                        <p>
+                        <h5>民國106年</h5>
+                        <li>明新科大承辦新竹縣幼兒園園長長班授課講師</li>
+                        <li>獲頒資深優良園長</li>
+                        </p>
+                        <p>
+                        <h5>民國105年-107年</h5>
+                        <li>新竹縣私立義民高中幼兒保育科-業師</li>
+                        <li>臺師大承辦新北市幼兒園園長長班授課講師</li>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -65,93 +122,234 @@
 
         <div class="row justify-content-center mt-5" data-aos="flip-down">
             <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="th\醫生.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">新出智明</h4>
-                        <p class="card-text">校醫</p>
+                <a href="" style="text-decoration:none;color:black;" data-toggle="modal" data-target="#modal2">
+                    <div class="card shake-trigger" style="width: 18rem;background: yellow;">
+                        <img src="th\醫生.jpg" class="card-img-top shake-slow" alt="...">
+                        <div class="card-body shake-slow">
+                            <h4 class="card-title">新出智明</h4>
+                            <p class="card-text">校護</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="col-lg-4">
+                <a href="" style="text-decoration:none;color:black;" data-toggle="modal" data-target="#modal3">
+                    <div class="card shake-trigger" style="width: 18rem;background: greenyellow;">
+                        <img src="th\警衛.jpg" class="card-img-top shake-slow" alt="...">
+                        <div class="card-body shake-slow">
+                            <h4 class="card-title">平頭阿伯</h4>
+                            <p class="card-text">警衛</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Modal2 -->
+        <div class="modal fade" id="modal2">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">新出智明<small>校護</small></h4>
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                    </div>
+                    <div class="modal-body">
+                        國立台南護理專科學校護理科
+                        <br>合格護理師-6年資歷
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="th\警衛.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">平頭男</h4>
-                        <p class="card-text">警衛</p>
+        </div>
+        <!-- Modal3 -->
+        <div class="modal fade" id="modal3">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">平頭阿伯<small>警衛</small></h4>
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                    </div>
+                    <div class="modal-body">
+                        國立嘉義大學柔道社
+                        <br>段級十段
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-lg-4 mt-5" data-aos="flip-down">
-                <div class="card" style="width: 18rem;">
-                    <img src="th\女1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">若狹留美</h4>
-                        <p class="card-text">星星一班導師</p>
+                <a href="" style="text-decoration:none;color:black;" data-toggle="modal" data-target="#modal4">
+                    <div class="card shake-trigger" style="width: 18rem;background:skyblue ;">
+                        <img src="th\女1.jpg" class="card-img-top shake-slow" alt="...">
+                        <div class="card-body shake-slow">
+                            <h4 class="card-title">若狹留美</h4>
+                            <p class="card-text">星星一班教師</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="col-lg-4 mt-5" data-aos="flip-down">
-                <div class="card" style="width: 18rem;">
-                    <img src="th\女2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">米原晃子</h4>
-                        <p class="card-text">星星二班導師</p>
+                <a href="" style="text-decoration:none;color:black;" data-toggle="modal" data-target="#modal5">
+                    <div class="card shake-trigger" style="width: 18rem;background: rgb(166, 116, 216);">
+                        <img src="th\女2.jpg" class="card-img-top shake-slow" alt="...">
+                        <div class="card-body shake-slow">
+                            <h4 class="card-title">米原晃子</h4>
+                            <p class="card-text">星星二班教師</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="col-lg-4 mt-5" data-aos="flip-down">
-                <div class="card" style="width: 18rem;">
-                    <img src="th\女3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">小林澄子</h4>
-                        <p class="card-text">月亮一班導師</p>
+                <a href="" style="text-decoration:none;color:black;" data-toggle="modal" data-target="#modal6">
+                    <div class="card shake-trigger" style="width: 18rem;background: orange;">
+                        <img src="th\女3.jpg" class="card-img-top shake-slow" alt="...">
+                        <div class="card-body shake-slow">
+                            <h4 class="card-title">小林澄子</h4>
+                            <p class="card-text">月亮一班教師</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="col-lg-4 mt-5" data-aos="flip-down">
-                <div class="card" style="width: 18rem;">
-                    <img src="th\女4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">茱蒂·史坦林</h4>
-                        <p class="card-text">月亮二班導師</p>
+                <a href="" style="text-decoration:none;color:black;" data-toggle="modal" data-target="#modal7">
+                    <div class="card shake-trigger" style="width: 18rem;background: yellow;">
+                        <img src="th\女4.jpg" class="card-img-top shake-slow" alt="...">
+                        <div class="card-body shake-slow">
+                            <h4 class="card-title">茱蒂·史坦林</h4>
+                            <p class="card-text">月亮二班教師</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="col-lg-4 mt-5" data-aos="flip-down">
-                <div class="card" style="width: 18rem;">
-                    <img src="th\男1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">大畑裕之</h4>
-                        <p class="card-text">太陽一班導師</p>
+                <a href="" style="text-decoration:none;color:black;" data-toggle="modal" data-target="#modal8">
+                    <div class="card shake-trigger" style="width: 18rem;background: greenyellow;">
+                        <img src="th\男1.jpg" class="card-img-top shake-slow" alt="...">
+                        <div class="card-body shake-slow">
+                            <h4 class="card-title">大畑裕之</h4>
+                            <p class="card-text">太陽一班教師</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Modal4 -->
+        <div class="modal fade" id="modal4">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">若狹留美<small>星星一班教師</small></h4>
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                    </div>
+                    <div class="modal-body">
+                        南臺科技大學幼兒保育系
+                        <br>小學學程實習
+                        <br>教保員-6年資歷
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal5 -->
+        <div class="modal fade" id="modal5">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">米原晃子<small>星星二班教師</small></h4>
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                    </div>
+                    <div class="modal-body">
+                        南亞技術學院幼兒保育系
+                        <br>教保員-6年資歷
+                        <br>靜宜大學英國語文學系
+                        <br>英語教學-11年
+                        <br>陽明舞蹈教室
+                        <br>舞蹈老師-6年
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal6 -->
+        <div class="modal fade" id="modal6">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">小林澄子<small>月亮一班教師</small></h4>
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                    </div>
+                    <div class="modal-body">
+                        明新科技大學幼兒保育系
+                        <br>教保員-15年資歷
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal7 -->
+        <div class="modal fade" id="modal7">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">茱蒂·史坦林<small>月亮二班教師</small></h4>
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                    </div>
+                    <div class="modal-body">
+                        明新科技大學幼兒保育系
+                        <br>教保員-14年資歷
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal8 -->
+        <div class="modal fade" id="modal8">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">大畑裕之<small>太陽一班教師</small></h4>
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                    </div>
+                    <div class="modal-body">
+                        稻江科技暨管理學院幼兒教育學系
+                        <br>教保員-11年資歷
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="bg-dark p-2 mt-5">
-        <p class="text-center text-white mt-3">Copyright &copy; Your Eebsite 2021</p>
+    <footer class="bg-dark text-center text-white p-2 mt-5">
+        <p class=" mt-3">&copy; 雲林縣立帝丹幼兒園 All Rights Reserved.</p>
+        <p>地址<i class="fas fa-map-marker-alt"></i>：632301 雲林縣虎尾鎮文化路64號<i class="far fa-kiss-wink-heart"
+                style="font-size: 30px;"></i>電話<i class="fas fa-phone"></i>：886-5-6315000<i
+                class="far fa-kiss-wink-heart" style="font-size: 30px;"></i>E-Mail<i
+                class="fas fa-paper-plane"></i>：secretary@nfu.edu.tw</p>
     </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.7/holder.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
+    <!--AOSanimation-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <!--moving letters-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="MovingLetters2.js"></script>
 </body>
 
 </html>
