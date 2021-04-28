@@ -92,15 +92,16 @@ body {
     body {
         background-image: url(pe_bg.jpg);
     }
-    .phone {
-        width: 70vw;
-    }
     .phone1 iframe {
         width: 100%;
     }
     .phone2 {
         height: auto;
     }
+}
+
+.phone {
+    width: 100%;
 }
 
 @media(min-width:576px) {
