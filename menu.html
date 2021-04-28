@@ -428,7 +428,17 @@
 
 
     <!--loading-->
-    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.js">
+    document.onreadystatechange = subSomething;
+
+function subSomething() {
+    if (document.readyState == "complete") {
+
+        document.getElementById(".loading").style.display="none";
+        document.body.style.overflow = 'auto';
+    }
+}
+    </script>
     <script src="js/loading.js"></script>
 </body>
 
