@@ -1,20 +1,17 @@
-<!doctype html>
 <html lang="en">
 
 <head>
     <title>本月菜單</title>
-    <link rel="icon" href="40941142.ico" type="image/x-icon" />
+    <link rel="icon" href="40941142.ico" type="image/x-icon">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--fontawesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <!--AOSanimation-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--movingletters-->
@@ -23,24 +20,181 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <link rel="stylesheet" href="sy/cc.css">
+    <style type="text/css">
+        ._th-container ._th-item {
+            margin-bottom: 3px;
+            position: relative;
+            width: 0;
+            height: 0;
+            cursor: pointer;
+            opacity: .3;
+            background-color: aquamarine;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 30px;
+            -webkit-transition: all .35s;
+            -o-transition: all .35s;
+            transition: all .35s;
+            right: 30px
+        }
+        
+        ._th-container ._th-item,
+        ._th-container ._th-click-hover,
+        ._th_cover-all-show-times ._th_times {
+            -webkit-box-shadow: -3px 4px 12px -5px black;
+            box-shadow: -3px 4px 12px -5px black
+        }
+        
+        ._th-container:hover ._th-item._item-x2 {
+            margin-left: 18px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px
+        }
+        
+        ._th-container:hover ._th-item._item-x-2 {
+            margin-left: 17px;
+            width: 38px;
+            height: 38px;
+            line-height: 38px
+        }
+        
+        ._th-container:hover ._th-item._item-xx2 {
+            width: 36px;
+            height: 36px;
+            margin-left: 16px;
+            line-height: 36px
+        }
+        
+        ._th-container:hover ._th-item._item-xx-2 {
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            margin-left: 14px
+        }
+        
+        ._th-container:hover ._th-item._item-reset {
+            width: 30px;
+            line-height: 30px;
+            height: 30px;
+            margin-left: 10px
+        }
+        
+        ._th-click-hover {
+            position: relative;
+            -webkit-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+            height: 45px;
+            width: 45px;
+            cursor: pointer;
+            opacity: .3;
+            border-radius: 100%;
+            background-color: aquamarine;
+            text-align: center;
+            line-height: 45px;
+            right: 0
+        }
+        
+        ._th-container:hover {
+            left: -5px
+        }
+        
+        ._th-container {
+            font-size: 12px;
+            -webkit-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+            left: -35px;
+            top: 20%;
+            position: fixed;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            z-index: 100000;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+        
+        ._th-container ._th-item:hover {
+            opacity: .8;
+            background-color: #5fb492;
+            color: aliceblue
+        }
+        
+        ._th-container ._th-item:active {
+            opacity: .9;
+            background-color: #1b3a26;
+            color: aliceblue
+        }
+        
+        ._th-container:hover ._th-click-hover {
+            opacity: .8
+        }
+        
+        ._th-container:hover ._th-item {
+            opacity: .6;
+            right: 0
+        }
+        
+        ._th-container ._th-click-hover:hover {
+            opacity: .8;
+            background-color: #5fb492;
+            color: aliceblue
+        }
+        
+        ._th_cover-all-show-times {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+            opacity: 1;
+            font-weight: 900;
+            font-size: 30px;
+            color: #4f4f4f;
+            background-color: rgba(0, 0, 0, 0.1)
+        }
+        
+        ._th_cover-all-show-times._th_hidden {
+            z-index: -99999;
+            opacity: 0;
+            -webkit-transition: 1s all;
+            -o-transition: 1s all;
+            transition: 1s all
+        }
+        
+        ._th_cover-all-show-times ._th_times {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: rgba(127, 255, 212, 0.51);
+            text-align: center;
+            line-height: 300px;
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            margin-top: -150px;
+            margin-right: -150px
+        }
+    </style>
 </head>
 
-<body>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
     <div class="loading"></div>
     <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark" style="opacity: 0.9;">
         <div class="container" style="max-width: 1400px;">
             <a href="home.html"><img src="Logo.png" alt="" class="logosize"></a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto ml-5 mt-2 mt-lg-0">
                     <!--標題設計-->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">園所資訊</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">園所資訊</a>
                         <div class="dropdown-menu bg-secondary" aria-labelledby="dropdownId">
                             <a class="dropdown-item text-warning" href="environment.html">園所環境</a>
                             <a class="dropdown-item text-warning" href="teacher.html">師資陣容</a>
@@ -69,14 +223,11 @@
             <span class="letters">110年4月餐點表</span>
         </span>
     </h1>
-    <p style="text-align: center; font-size:30px;">下載菜單：<a href="menu_data\110年4月餐點表.docx"><i
-                class="fas fa-file-word animate__animated animate__tada animate__infinite infinite"></i></a> <a
-            href="menu_data\110年4月餐點表.pdf" target="_blank"><i
-                class="fas fa-file-pdf animate__animated animate__tada animate__infinite infinite"></i></a></p>
+    <p style="text-align: center; font-size:30px;">下載菜單：<a href="menu_data\110年4月餐點表.docx"><i class="fas fa-file-word animate__animated animate__tada animate__infinite infinite"></i></a> <a href="menu_data\110年4月餐點表.pdf" target="_blank"><i class="fas fa-file-pdf animate__animated animate__tada animate__infinite infinite"></i></a></p>
 
     <div class="container text-center">
         <div class="row justify-content-center align-items-center mb-5">
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-up">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init aos-animate" data-aos="zoom-in-up">
                 <div class="card" style="width: 18rem; background:skyblue;">
                     <div class="card-header">
                         <h4>4/1(四)</h4>
@@ -89,7 +240,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-up" style="z-index:-1;">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-up" style="z-index:-1;">
                 <div class="card" style="width: 18rem; background:rgb(166, 116, 216);">
                     <div class="card-header">
                         <h4>4/2(五)</h4>
@@ -104,7 +255,7 @@
         </div>
 
         <div class="row justify-content-center align-items-center mb-5">
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-down">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-down">
                 <div class="card" style="width: 18rem;background: orange;">
                     <div class="card-header">
                         <h4>4/5(一)</h4>
@@ -117,7 +268,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-down">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-down">
                 <div class="card" style="width: 18rem;background: yellow;">
                     <div class="card-header">
                         <h4>4/6(二)</h4>
@@ -130,7 +281,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-up">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-up">
                 <div class="card" style="width: 18rem;background: greenyellow;">
                     <div class="card-header">
                         <h4>4/7(三)</h4>
@@ -144,7 +295,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-down">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-down">
                 <div class="card" style="width: 18rem;background: skyblue;">
                     <div class="card-header">
                         <h4>4/8(四)</h4>
@@ -157,7 +308,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-up">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-up">
                 <div class="card" style="width: 18rem;background:rgb(166, 116, 216);">
                     <div class="card-header">
                         <h4>4/9(五)</h4>
@@ -172,7 +323,7 @@
         </div>
 
         <div class="row justify-content-center align-items-center mb-5">
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-down">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-down">
                 <div class="card" style="width: 18rem;background: orange;">
                     <div class="card-header">
                         <h4>4/12(一)</h4>
@@ -186,7 +337,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-up">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-up">
                 <div class="card" style="width: 18rem;background: yellow;">
                     <div class="card-header">
                         <h4>4/13(二)</h4>
@@ -200,7 +351,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-down">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-down">
                 <div class="card" style="width: 18rem;background: greenyellow;">
                     <div class="card-header">
                         <h4>4/14(三)</h4>
@@ -213,7 +364,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-up">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-up">
                 <div class="card" style="width: 18rem;background: skyblue;">
                     <div class="card-header">
                         <h4>4/15(四)</h4>
@@ -226,7 +377,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-down">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-down">
                 <div class="card" style="width: 18rem;background: rgb(166, 116, 216);">
                     <div class="card-header">
                         <h4>4/16(五)</h4>
@@ -241,7 +392,7 @@
         </div>
 
         <div class="row justify-content-center align-items-center mb-5">
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-up">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-up">
                 <div class="card" style="width: 18rem;background: orange;">
                     <div class="card-header">
                         <h4>4/19(一)</h4>
@@ -255,7 +406,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-down">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-down">
                 <div class="card" style="width: 18rem;background: yellow;">
                     <div class="card-header">
                         <h4>4/20(二)</h4>
@@ -268,7 +419,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-up">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-up">
                 <div class="card" style="width: 18rem;background: greenyellow;">
                     <div class="card-header">
                         <h4>4/21(三)</h4>
@@ -281,7 +432,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-down">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-down">
                 <div class="card" style="width: 18rem;background: skyblue;">
                     <div class="card-header">
                         <h4>4/22(四)</h4>
@@ -294,7 +445,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-up">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-up">
                 <div class="card" style="width: 18rem;background: rgb(166, 116, 216);">
                     <div class="card-header">
                         <h4>4/23(五)</h4>
@@ -309,7 +460,7 @@
         </div>
 
         <div class="row justify-content-center align-items-center mb-5">
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-down">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-down">
                 <div class="card" style="width: 18rem;background: orange;">
                     <div class="card-header">
                         <h4>4/26(一)</h4>
@@ -322,7 +473,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-up">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-up">
                 <div class="card" style="width: 18rem;background: yellow;">
                     <div class="card-header">
                         <h4>4/27(二)</h4>
@@ -336,7 +487,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-down">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-down">
                 <div class="card" style="width: 18rem;background: greenyellow;">
                     <div class="card-header">
                         <h4>4/28(三)</h4>
@@ -349,7 +500,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-up">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-up">
                 <div class="card" style="width: 18rem;background: skyblue;">
                     <div class="card-header">
                         <h4>4/29(四)</h4>
@@ -362,7 +513,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6  col-lg-4 mb-4" data-aos="zoom-in-down">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 aos-init" data-aos="zoom-in-down">
                 <div class="card" style="width: 18rem;background: rgb(166, 116, 216);">
                     <div class="card-header">
                         <h4>4/30(五)</h4>
@@ -382,8 +533,8 @@
     <h1 class="ml1">
         <span class="text-wrapper">
             <span class="line line1"></span>
-            <span class="letters">◎本園一律使用「國產豬、牛肉食材」。</span>
-            <span class="line line2"></span>
+        <span class="letters">◎本園一律使用「國產豬、牛肉食材」。</span>
+        <span class="line line2"></span>
         </span>
     </h1>
 
@@ -396,25 +547,16 @@
     </h3>
 
     <footer class="bg-dark text-center text-white p-2 mt-5">
-        <p class=" mt-3">&copy; 雲林縣立帝丹幼兒園 All Rights Reserved.</p>
-        <p>地址<i class="fas fa-map-marker-alt"></i>：632301 雲林縣虎尾鎮文化路64號<i class="far fa-kiss-wink-heart"
-                style="font-size: 30px;"></i>電話<i class="fas fa-phone"></i>：886-5-6315000<i
-                class="far fa-kiss-wink-heart" style="font-size: 30px;"></i>E-Mail<i
-                class="fas fa-paper-plane"></i>：secretary@nfu.edu.tw</p>
+        <p class=" mt-3">© 雲林縣立帝丹幼兒園 All Rights Reserved.</p>
+        <p>地址<i class="fas fa-map-marker-alt"></i>：632301 雲林縣虎尾鎮文化路64號<i class="far fa-kiss-wink-heart" style="font-size: 30px;"></i>電話<i class="fas fa-phone"></i>：886-5-6315000<i class="far fa-kiss-wink-heart" style="font-size: 30px;"></i>E-Mail<i class="fas fa-paper-plane"></i>：secretary@nfu.edu.tw</p>
     </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.7/holder.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!--AOS animation-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -425,6 +567,73 @@
     <!--moving letters-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="MovingLetters.js"></script>
+    <remove-web-limits-iqxin id="rwl-iqxin" class="rwl-exempt" style="position: fixed; top: 0px; left: 0px;">
+        <qxinbutton type="qxinbutton" id="rwl-setbtn"> set </qxinbutton>
+        <lalala style="cursor:move; font-size:12px;">限制解除</lalala> <input type="checkbox" name="" id="black_node">
+        <style type="text/css">
+            #rwl-iqxin {
+                position: fixed;
+                transform: translate(-95px, 0);
+                width: 85px;
+                height: 25px;
+                font-size: 12px;
+                font-weight: 500;
+                font-family: Verdana, Arial, '宋体';
+                color: #fff;
+                background: #333;
+                z-index: 2147483647;
+                margin: 0;
+                opacity: 0.05;
+                transition: 0.3s;
+                overflow: hidden;
+                user-select: none;
+                text-align: center;
+                white-space: nowrap;
+                line-height: 25px;
+                padding: 0 16px;
+                border: 1px solid #ccc;
+                border-width: 1px 1px 1px 0;
+                border-bottom-right-radius: 5px;
+                box-sizing: content-box;
+            }
+            
+            #rwl-iqxin input {
+                margin: 0;
+                padding: 0;
+                vertical-align: middle;
+                -webkit-appearance: checkbox;
+                -moz-appearance: checkbox;
+                position: static;
+                clip: auto;
+                opacity: 1;
+                cursor: pointer;
+            }
+            
+            #rwl-iqxin.rwl-active-iqxin {
+                left: 0px;
+                transform: translate(0, 0);
+                opacity: 0.9;
+                height: 32px;
+                line-height: 32px
+            }
+            
+            #rwl-iqxin label {
+                margin: 0;
+                padding: 0;
+                font-weight: 500;
+            }
+            
+            #rwl-iqxin #rwl-setbtn {
+                margin: 0 4px 0 0;
+                padding: 0 0 0 4px;
+                border: none;
+                border-radius: 2px;
+                cursor: pointer;
+                background: #fff;
+                color: #000;
+            }
+        </style>
+    </remove-web-limits-iqxin>
 
 
     <!--loading-->
@@ -439,6 +648,24 @@
         }
     </script>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js "></script>
+
+
+
+    <div>
+        <div class="_th-container">
+            <div class="_th-click-hover _item-input">
+                x1.00
+            </div>
+            <div class="_th-item _item-x2">&gt;</div>
+            <div class="_th-item _item-x-2">&lt;</div>
+            <div class="_th-item _item-xx2">&gt;&gt;</div>
+            <div class="_th-item _item-xx-2">&lt;&lt;</div>
+            <div class="_th-item _item-reset">O</div>
+        </div>
+        <div class="_th_cover-all-show-times _th_hidden">
+            <div class="_th_times">x1.00</div>
+        </div>
+    </div>
 </body>
 
 </html>
